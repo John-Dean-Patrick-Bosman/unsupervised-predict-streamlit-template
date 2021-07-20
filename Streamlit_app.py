@@ -15,9 +15,8 @@ with header:
 with dataset:
     st.header("Movie Recommendations")
     st.text("This dataset was found from EDSA")
-
-        movie_data = pd.read_csv("movies.csv")
-        st.write(movie_data.head())
+    movie_data = pd.read_csv("movies.csv")
+    st.write(movie_data.head())
 
 
 
