@@ -109,13 +109,25 @@ def main():
 	
    if page_selection == "Exploratory Data Analysis":
 	st.title("Exploratory Data Analysis")
-        st.write("We were given access to a number of csv files which contained data relating to movies. The csv files were as follows:")
+        st.write("We were given access to a number of csv files which contained data relating to movies. The csv files were transformed into dataframes as follows:")
 	st.write("sample_submission.csv - this was just an example of the layout for how our submission to Kaggle should be formatted")
+	st.image('resources/imgs/df_sample_submission.png',use_column_width=True)
 	st.write("movies.csv - this was a csv containing movie ids, movie titles as well as a list of genres that a movie belonged to")
-	st.write("imdb_data.csv - this file contained ")
-	st.write('### EXPLORE Data Science Academy Unsupervised Predict')
-        st.image('resources/imgs/Image_header.png',use_column_width=True)
-
+	st.image('resources/imgs/df_movies.png',use_column_width=True)
+	st.write("imdb_data.csv - this file contained information pertaining to movies sourced from imdb")
+	st.image('resources/imgs/df_imdb.png',use_column_width=True)
+	st.write("genome_scores.csv - this file contained information pertaining to movies with relevance")
+	st.image('resources/imgs/df_genome_scores.png',use_column_width=True)
+	st.write("genome_tags.csv - this file contained information pertaining to movies and contained timestamps and tags")
+	st.image('resources/imgs/df_tags.png',use_column_width=True)
+	st.write("train.csv - this file contained information on movie titles, user ids and their respective ratings")
+	st.image('resources/imgs/df_train.png',use_column_width=True)
+	st.write("test.csv - this file contained information on movie titles and user ids without ratings")
+	st.image('resources/imgs/df_test.png',use_column_width=True)
+	st.write("tags.csv - this file contained information on movie titles and user ids as well as associated tags")
+	st.image('resources/imgs/df_tags.png',use_column_width=True)
+	st.write("links.csv - this file contained ids for use with linking the various dataframes together")
+	st.image('resources/imgs/df_links.png',use_column_width=True)
 
 if __name__ == '__main__':
     main()
