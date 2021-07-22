@@ -45,7 +45,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Recommender System","Solution Overview", "Exploratory Data Analysis"]
+    page_options = ["Recommender System","Exploratory Data Analysis","Solution Overview"]
 
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -103,10 +103,10 @@ def main():
     if page_selection == "Solution Overview":
         st.title("Solution Overview")
         st.write("For our solution we decided to merge multiple dataframes together and try to create models based on the genre columns.")
-        st.image('resources/imgs/merge.png',use_column_width=True)
-        st.image('resources/imgs/movies_genres.png',use_column_width=True)
+        st.image('resources/imgs/merge.png',use_column_width=False)
+        st.image('resources/imgs/movies_genres.png',use_column_width=False)
         st.write("We tried a number of models but eventualy settled for an optimized SVD model which scored us an RMSE of 0.79 on Kaggle")
-        st.image('resources/imgs/kaggle.png',use_column_width=True)
+        st.image('resources/imgs/kaggle.png',use_column_width=False)
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
@@ -117,33 +117,33 @@ def main():
         st.write("sample_submission.csv - this was just an example of the layout for how our submission to Kaggle should be formatted")
         st.image('resources/imgs/df_sample_submission.png',use_column_width=False)
         st.write("movies.csv - this was a csv containing movie ids, movie titles as well as a list of genres that a movie belonged to")
-        st.image('resources/imgs/df_movies.png',use_column_width=True)
+        st.image('resources/imgs/df_movies.png',use_column_width=False)
         st.write("imdb_data.csv - this file contained information pertaining to movies sourced from imdb")
-        st.image('resources/imgs/df_imdb.png',use_column_width=True)
+        st.image('resources/imgs/df_imdb.png',use_column_width=False)
         st.write("genome_scores.csv - this file contained information pertaining to movies with relevance")
-        st.image('resources/imgs/df_genome_scores.png',use_column_width=True)
+        st.image('resources/imgs/df_genome_scores.png',use_column_width=False)
         st.write("genome_tags.csv - this file contained information pertaining to movies and contained timestamps and tags")
-        st.image('resources/imgs/df_tags.png',use_column_width=True)
+        st.image('resources/imgs/df_tags.png',use_column_width=False)
         st.write("train.csv - this file contained information on movie titles, user ids and their respective ratings")
-        st.image('resources/imgs/df_train.png',use_column_width=True)
+        st.image('resources/imgs/df_train.png',use_column_width=False)
         st.write("test.csv - this file contained information on movie titles and user ids without ratings")
-        st.image('resources/imgs/df_test.png',use_column_width=True)
+        st.image('resources/imgs/df_test.png',use_column_width=False)
         st.write("tags.csv - this file contained information on movie titles and user ids as well as associated tags")
-        st.image('resources/imgs/df_tags.png',use_column_width=True)
+        st.image('resources/imgs/df_tags.png',use_column_width=False)
         st.write("links.csv - this file contained ids for use with linking the various dataframes together")
-        st.image('resources/imgs/df_links.png',use_column_width=True)
+        st.image('resources/imgs/df_links.png',use_column_width=False)
         st.write("We had a look into the most common genre of movies:")
-        st.image('resources/imgs/genres.png',use_column_width=True)
+        st.image('resources/imgs/genres.png',use_column_width=False)
         st.write("Since the dataset was so large we also subseted the data to contain only movies that had at least 50 ratings:")
-        st.image('resources/imgs/min_ratings.png',use_column_width=True)
+        st.image('resources/imgs/min_ratings.png',use_column_width=False)
         st.write("We also created a visualizaton to detemine the number of ratings as well as the actual ratings. It may be noted that people tend to rate slighly higher than lower")
-        st.image('resources/imgs/number_ratings.png',use_column_width=True) ##if issue...
+        st.image('resources/imgs/number_ratings.png',use_column_width=False) 
         st.write("We also had a look of movie titles by popularity:")
-        st.image('resources/imgs/pop_titles.png',use_column_width=True)
+        st.image('resources/imgs/pop_titles.png',use_column_width=False)
         st.write("And did a further investigation based on the nubmer of movies released per director:")
-        st.image('resources/imgs/director_movies.png',use_column_width=True)
+        st.image('resources/imgs/director_movies.png',use_column_width=False)
         st.write("We also investigated the number of ratings each director have recieved:")
-        st.image('resources/imgs/director_ratings.png',use_column_width=True)
+        st.image('resources/imgs/director_ratings.png',use_column_width=False)
 	
 if __name__ == '__main__':
     main()
