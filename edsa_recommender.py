@@ -102,7 +102,11 @@ def main():
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
     if page_selection == "Solution Overview":
         st.title("Solution Overview")
-        st.write("Describe your winning approach on this page")
+        st.write("For our solution we decided to merge multiple dataframes together and try to create models based on the genre columns.")
+	st.image('resources/imgs/merge.png',use_column_width=True)
+	st.image('resources/imgs/movies_genres.png',use_column_width=True)
+	st.write("We tried a number of models but eventualy settled for an optimized SVD model which scored us an RMSE of 0.79 on Kaggle")
+	st.image('resources/imgs/kaggle.png',use_column_width=True)
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
@@ -128,6 +132,19 @@ def main():
 	st.image('resources/imgs/df_tags.png',use_column_width=True)
 	st.write("links.csv - this file contained ids for use with linking the various dataframes together")
 	st.image('resources/imgs/df_links.png',use_column_width=True)
+	st.write("We had a look into the most common genre of movies:")
+	st.image('resources/imgs/genres.png',use_column_width=True)
+	st.write("Since the dataset was so large we also subseted the data to contain only movies that had at least 50 ratings:")
+	st.image('resources/imgs/min_ratings.png',use_column_width=True)
+	st.write("We also created a visualizaton to detemine the number of ratings as well as the actual ratings. It may be noted that people tend to rate slighly higher than lower")
+	st.image('resources/imgs/number_ratings.png',use_column_width=True) ##if issue...
+	st.write("We also had a look of movie titles by popularity:")
+	st.image('resources/imgs/pop_titles.png',use_column_width=True)
+	st.write("And did a further investigation based on the nubmer of movies released per director:")
+	st.image('resources/imgs/director_movies.png',use_column_width=True)
+	st.write("We also investigated the number of ratings each director have recieved:")
+	st.image('resources/imgs/director_ratings.png',use_column_width=True)
+	
 
 if __name__ == '__main__':
     main()
