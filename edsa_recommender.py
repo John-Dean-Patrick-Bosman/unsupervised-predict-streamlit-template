@@ -100,7 +100,7 @@ def main():
     # -------------------------------------------------------------------
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
-    if page_selection == "Solution Overview": 
+    if page_selection == "Solution Overview":
 	st.title("Solution Overview")
 	st.write("For our solution we decided to merge multiple dataframes together and try to create models based on the genre columns.")
 	st.image('resources/imgs/merge.png',use_column_width=True)
