@@ -82,7 +82,7 @@ def content_model(movie_list,top_n=10):
     recommended_movies = []
     data = data_preprocessing(27000)
     # Instantiating and generating the count matrix
-    count_vec = CountVectorizer()
+    count_vec = CountVectorizer(strip_accents = "unicode", stop_words = "english", ngram_range = (1,2) #editted
     count_matrix = count_vec.fit_transform(data['keyWords'])
     indices = pd.Series(data['title'])
     cosine_sim = cosine_similarity(count_matrix, count_matrix)
