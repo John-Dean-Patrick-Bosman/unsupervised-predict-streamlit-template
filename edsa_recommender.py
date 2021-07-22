@@ -137,13 +137,13 @@ def main():
         st.write("Since the dataset was so large we also subseted the data to contain only movies that had at least 50 ratings:")
         st.image('resources/imgs/min_ratings.png',use_column_width=False)
         st.write("We also created a visualizaton to detemine the number of ratings as well as the actual ratings. It may be noted that people tend to rate slighly higher than lower")
-        st.image('resources/imgs/number_ratings.png',use_column_width=False) 
+        st.image('resources/imgs/number_ratings.png',use_column_width=True) 
         st.write("We also had a look of movie titles by popularity:")
-        st.image('resources/imgs/pop_titles.png',use_column_width=False)
+        st.image('resources/imgs/pop_titles.png',use_column_width=True)
         st.write("And did a further investigation based on the nubmer of movies released per director:")
-        st.image('resources/imgs/director_movies.png',use_column_width=False)
+        st.image('resources/imgs/director_movies.png',use_column_width=True)
         st.write("We also investigated the number of ratings each director have recieved:")
-        st.image('resources/imgs/director_ratings.png',use_column_width=False)
+        st.image('resources/imgs/director_ratings.png',use_column_width=True)
 	
 if __name__ == '__main__':
     main()
