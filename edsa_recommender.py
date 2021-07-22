@@ -106,6 +106,12 @@ def main():
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
+	
+   if page_selection == "Exploratory Data Analysis":
+	st.title("Exploratory Data Analysis")
+        st.write("Describe your winning approach on this page")
+	st.write('### EXPLORE Data Science Academy Unsupervised Predict')
+        st.image('resources/imgs/Image_header.png',use_column_width=True)
 
 
 if __name__ == '__main__':
