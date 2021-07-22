@@ -102,11 +102,11 @@ def main():
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
     if page_selection == "Solution Overview":
         st.title("Solution Overview")
-	st.write("For our solution we decided to merge multiple dataframes together and try to create models based on the genre columns.")
-	st.image('resources/imgs/merge.png',use_column_width=True)
-	st.image('resources/imgs/movies_genres.png',use_column_width=True)
-	st.write("We tried a number of models but eventualy settled for an optimized SVD model which scored us an RMSE of 0.79 on Kaggle")
-	st.image('resources/imgs/kaggle.png',use_column_width=True)
+        st.write("For our solution we decided to merge multiple dataframes together and try to create models based on the genre columns.")
+        st.image('resources/imgs/merge.png',use_column_width=True)
+        st.image('resources/imgs/movies_genres.png',use_column_width=True)
+        st.write("We tried a number of models but eventualy settled for an optimized SVD model which scored us an RMSE of 0.79 on Kaggle")
+        st.image('resources/imgs/kaggle.png',use_column_width=True)
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
