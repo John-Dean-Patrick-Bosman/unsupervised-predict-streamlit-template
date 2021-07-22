@@ -101,7 +101,7 @@ def main():
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
     if page_selection == "Solution Overview":
-	st.title("Solution Overview")
+        st.title("Solution Overview")
 	st.write("For our solution we decided to merge multiple dataframes together and try to create models based on the genre columns.")
 	st.image('resources/imgs/merge.png',use_column_width=True)
 	st.image('resources/imgs/movies_genres.png',use_column_width=True)
@@ -111,7 +111,7 @@ def main():
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
 	
-   if page_selection == "Exploratory Data Analysis":
+    if page_selection == "Exploratory Data Analysis":
 	st.title("Exploratory Data Analysis")
         st.write("We were given access to a number of csv files which contained data relating to movies. The csv files were transformed into dataframes as follows:")
 	st.write("sample_submission.csv - this was just an example of the layout for how our submission to Kaggle should be formatted")
