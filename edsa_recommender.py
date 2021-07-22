@@ -115,7 +115,7 @@ def main():
         st.title("Exploratory Data Analysis")
         st.write("We were given access to a number of csv files which contained data relating to movies. The csv files were transformed into dataframes as follows:")
         st.write("sample_submission.csv - this was just an example of the layout for how our submission to Kaggle should be formatted")
-        st.image('resources/imgs/df_sample_submission.png',use_column_width=True)
+        st.image('resources/imgs/df_sample_submission.png',use_column_width=False)
         st.write("movies.csv - this was a csv containing movie ids, movie titles as well as a list of genres that a movie belonged to")
         st.image('resources/imgs/df_movies.png',use_column_width=True)
         st.write("imdb_data.csv - this file contained information pertaining to movies sourced from imdb")
