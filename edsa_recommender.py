@@ -109,7 +109,10 @@ def main():
 	
    if page_selection == "Exploratory Data Analysis":
 	st.title("Exploratory Data Analysis")
-        st.write("Describe your winning approach on this page")
+        st.write("We were given access to a number of csv files which contained data relating to movies. The csv files were as follows:")
+	st.write("sample_submission.csv - this was just an example of the layout for how our submission to Kaggle should be formatted")
+	st.write("movies.csv - this was a csv containing movie ids, movie titles as well as a list of genres that a movie belonged to")
+	st.write("imdb_data.csv - this file contained ")
 	st.write('### EXPLORE Data Science Academy Unsupervised Predict')
         st.image('resources/imgs/Image_header.png',use_column_width=True)
 
